@@ -1,7 +1,7 @@
 1) Indexing using B+ tree
 
 a)You'll store an index file by default based on the primary key with B+ tree structure for each table imported/created. This time the primary key will be integer and auto-incremented, and the user will not be asked for the primary key while inserting a record.
-b) You're supposed to update your B+ tree when a change occurs in the table, i.e., insert/update/delete
+b) You're supposed to update your B+ tree when a change occurs in the table, i.e., insert/update/delete.
 c) You should have an item in your menu to display the B+ tree for a table with a proper representation at any time.
 
  
@@ -10,12 +10,12 @@ Please note that your search time must not exceed ~10 iterations while locating 
  2) Implementation of an SQL parser
  
 Similar to phase 1, you will provide an interface to users to query the database, but this time only correct SQL commands are allowed as input. Your system should support these operations:
-i)  Select From Where (SFW) queries
-ii) select a particular attribute / all attributes (*)
-iii) make joins by primary keys (your join operation must use B+ tree that you create in the first section)
-set <, =, > constraints at any attribute in Where clause
-iv) search by a primary key using B+ tree
-    order by asc/desc
+i)  Select From Where (SFW) queries.
+ii) select a particular attribute / all attributes (*).
+iii) make joins by primary keys (your join operation must use B+ tree that you create in the first section).
+iv) set <, =, > constraints at any attribute in Where clause
+iv) search by a primary key using B+ tree 
+v) order by asc/desc.
     
 You can assume that there will NOT be nested queries
 Similarly, insert/update/delete operations should be supported including applicable items (except join) in Select 
